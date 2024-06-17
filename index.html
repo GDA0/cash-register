@@ -52,7 +52,49 @@
 				</div>
 			</nav>
 		</header>
-		<main class="flex-grow-1"></main>
+		<main class="flex-grow-1">
+			<section class="info-section mt-3 px-3">
+				<div
+					class="container py-2 ps-3 border border-2 d-flex gap-3"
+					style="max-width: 540px"
+				>
+					<i class="bi bi-info-circle fs-3"></i>
+					<p class="fs-5">
+						This application returns change to the customer based on
+						the price of the item, the amount of cash provided by
+						the customer, and the amount of cash in the cash drawer.
+					</p>
+				</div>
+			</section>
+			<section
+				id="form-section"
+				class="container pt-3 px-3"
+				style="max-width: 720px"
+			>
+				<div class="fs-4 mb-3" id="change-due"></div>
+				<form class="text-center">
+					<label for="cash" class="form-label fs-5">Enter cash from customer:</label>
+					<div class="input-group mb-3 mx-auto"
+					style="max-width: 360px;">
+						<input
+							type="number"
+							class="form-control"
+							id="cash"
+							placeholder="E.g. 100"
+							aria-label="Cash from customer"
+							aria-describedby="purchase button"
+						/>
+						<button
+							class="btn btn-outline-secondary"
+							type="submit"
+							id="purchase-btn"
+						>
+							Purchase
+						</button>
+					</div>
+				</form>
+			</section>
+		</main>
 		<footer class="container text-center fw-medium text-secondary mt-auto">
 			<p>
 				&copy;
